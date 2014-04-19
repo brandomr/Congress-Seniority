@@ -1,0 +1,87 @@
+{
+  "bounds": [
+    -173.6719,
+    13.9234,
+    -61.875,
+    73.2267
+  ],
+  "center": [
+    -99.1406,
+    37.1603,
+    1
+  ],
+  "format": "png",
+  "interactivity": {
+    "layer": "113congressbound6",
+    "template_teaser": "<img src ='http://theunitedstates.io/images/congress/225x275/{{{113congr_8}}}.jpg' width='112' height=‘137’ align='center’>\n<br>\n<strong>{{{113congr_7}}} {{{113congr10}}}</strong>\n<br>\nParty: {{{113congr14}}}\n<br>\nDistrict: {{{ABBREV}}} {{{DISTRICT}}}\n<br>\nSeniority: {{{113congr16}}} years\n<br>\nVotes with Party: {{{113congr21}}}%\n<br>\nMissed Votes: {{{113congr12}}}%\n",
+    "template_full": "<img src ='http://theunitedstates.io/images/congress/225x275/{{{113congr_8}}}.jpg' width='112' height='137' align='center'>\n<br>\n<strong>{{{113congr_7}}} {{{113congr10}}}</strong>\n<br>\nParty: {{{113congr14}}}\n<br>\nDistrict: {{{ABBREV}}} {{{DISTRICT}}}\n<br>\nSeniority: {{{113congr16}}} years\n<br>\nVotes with Party: {{{113congr21}}}%\n<br>\nMissed Votes: {{{113congr12}}}%\n<br>\n<a href='{{{113congr20}}}'>Website</a>\n<br>\n<a href='http://www.facebook.com/{{{113congr_6}}}'>Facebook</a>\n<br>\n<a href='http://www.twitter.com/{{{113congr19}}}'>Twitter</a>\n\n\n<style type='text/css'>\n  a {\n    color: #2171b5;    \n}\n</style>"
+  },
+  "minzoom": 0,
+  "maxzoom": 8,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss",
+    "labels.mss"
+  ],
+  "Layer": [
+    {
+      "id": "countries",
+      "name": "countries",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "geometry": "polygon",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-0-countries.zip",
+        "type": "shape"
+      }
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -179.14734,
+        18.917466137221794,
+        179.77847000000003,
+        71.35256064399978
+      ],
+      "id": "113congressbound6",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/brandomr/Sites/Congress Districts/boundshape/113_congress_bound6.shp",
+        "id": "113congressbound6",
+        "project": "113th_Congress",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "113congressbound6"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -178.21759836236586,
+        18.92178634508703,
+        -66.96927125875779,
+        71.40623539396698
+      ],
+      "id": "states",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/brandomr/Sites/Congress Districts/states_21basic/states.shp",
+        "id": "states",
+        "project": "113th_Congress",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "states"
+    }
+  ],
+  "scale": 1,
+  "metatile": 2,
+  "_basemap": "",
+  "name": "113th U.S. Congress by Tenure",
+  "description": "",
+  "legend": "<div class='my-legend'>\n<div class='legend-title'>Congressional Tenure (Years)</div>\n<div class='legend-scale'><p>Republicans</p>\n  <ul class='legend-labels'>\n    <li><span style='background:#fcbba1;'></span></li>\n    <li><span style='background:#fc9272;'></span></li>\n    <li><span style='background:#fb6a4a;'></span></li>\n    <li><span style='background:#ef3b2c;'></span></li>\n    <li><span style='background:#cb181d;'></span></li> \n    <li><span style='background:#a50f15;'></span></li>\n    <li><span style='background:#67000d;'></span></li>\n  </ul>\n</div>\n<div class='legend-scale'><p>Democrats</p>\n  <ul class='legend-labels'>\n    <li><span style='background:#c6dbef;'></span>0-4</li>\n    <li><span style='background:#9ecae1;'></span>5-9</li>\n    <li><span style='background:#6baed6;'></span>10-14</li>\n    <li><span style='background:#4292c6;'></span>15-19</li>\n    <li><span style='background:#2171b5;'></span>20-24</li> \n    <li><span style='background:#08519c;'></span>25-29</li>\n    <li><span style='background:#08306b;'></span>>29</li>\n  </ul>\n</div>\n<div class='legend-source'>Source: <a href=\"http://developer.nytimes.com/docs/read/congress_api\">New York Times Congress API</a></div>\n</div>\n\n<style type='text/css'>\n  .my-legend .legend-title {\n    max-width: 750px;\n    max-height: 200px;\n    text-align: left;\n    margin-bottom: 8px;\n    font-weight: bold;\n    font-size: 90%;\n    }\n  .my-legend .legend-scale ul {\n    margin: 0;\n    padding: 0;\n    float: left;\n    list-style: none;\n    }\n  .my-legend .legend-scale ul li {\n    display: block;\n    float: left;\n    width: 40px;\n    margin-bottom: 6px;\n    text-align: center;\n    font-size: 80%;\n    list-style: none;\n    }\n  .my-legend ul.legend-labels li span {\n    display: block;\n    float: left;\n    height: 15px;\n    width: 40px;\n    }\n  .my-legend .legend-source {\n    font-size: 70%;\n    color: #999;\n    clear: both;\n    }\n  .my-legend a {\n    color: #777;\n    }\n</style>",
+  "attribution": ""
+}
